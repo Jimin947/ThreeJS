@@ -221,7 +221,7 @@ function animate() {
     tran = 0.4;
   }
 
-  controls.update();
+  //controls.update();
 
   renderer.render(scene, camera);
 }
@@ -229,7 +229,7 @@ function animate() {
 const raycaster = new THREE.Raycaster();
 var mouse = new THREE.Vector2();
 
-window.addEventListener("pointermove", onMouseMove);
+//window.addEventListener("pointermove", onMouseMove);
 
 function onMouseMove(event) {
   // Get screen-space x/y
