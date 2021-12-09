@@ -1,12 +1,12 @@
-import * as THREE from "three";
+import * as THREE from "https://cdn.skypack.dev/pin/three@v0.135.0-pjGUcRG9Xt70OdXl97VF/mode=imports/optimized/three.js";
 
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import { OrbitControls } from "https://cdn.skypack.dev/three@0.135.0/examples/jsm/controls/OrbitControls";
 
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { GLTFLoader } from "https://cdn.skypack.dev/three@0.135.0/examples/jsm/loaders/GLTFLoader.js";
 
-import { FontLoader } from "three/examples/jsm/loaders/FontLoader.js";
+import { FontLoader } from "https://cdn.skypack.dev/three@0.135.0/examples/jsm/loaders/FontLoader.js";
 
-import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry.js";
+import { TextGeometry } from "https://cdn.skypack.dev/three@0.135.0/examples/jsm/geometries/TextGeometry.js";
 
 const scene = new THREE.Scene();
 
