@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f28d1e6fda.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <canvas id="bg"></canvas>
+    <div id="app"></div>
+
+    <div class="background">
+      <div class="nav-container stag">
+        <header>
+          <a href="index.html" class="logo"
+            ><i class="fas fa-terminal" style="font-size: 20px"></i>
+            Portfolio</a
+          >
+
+          <nav>
+            <ul>
+              <li>
+                <a href="#About">About</a>
+              </li>
+              <li>
+                <a href="#Skills">Skills</a>
+              </li>
+              <li>
+                <a href="#Projects">Projects</a>
+              </li>
+              <li>
+                <a href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+
+      <div id="cover"></div>
+
+      <div class="hero">
+        <div class="content">
+          <h1>Jimin Cheon</h1>
+          <div class="meet stag">
+            <p>
+              <i class="fas fa-graduation-cap"></i> Duke Computer Science Major
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="progbar"></div>
+    <div id="scrollPath"></div>
+
+    <main>
+      <section id="About" class="introduction">
+        <div class="left">
+          <div class="inner transition2">
+            <h1 class="bigtitle">About</h1>
+            <p class="featured-desc">
+              My name is Jimin. I am an aspiring SWE. I am interested in tech
+              ethics, VR, and recently front-end development. Currently based in
+              North Carolina, I am a rising junior pursuing my Computer Science
+              degree at Duke University.
+            </p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="inner transition2">
+            <h1 id="Facts" class="bigtitle">Fun Facts</h1>
+            <ul class="featured-desc">
+              <li>
+                <i class="fas fa-angle-right"></i> Love trying out new cuisines
+                and traveling
+              </li>
+              <li>
+                <i class="fas fa-angle-right"></i> Lived over five countries and
+                visited more than eight.
+              </li>
+              <li>
+                <i class="fas fa-angle-right"></i> Served in the U.S. Army as a
+                KATUSA
+              </li>
+              <li>
+                <i class="fas fa-angle-right"></i> Does not like mint chocolate
+                chip flavored kit-kats
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="Skills" class="skills">
+        <h1 class="bigtitle">Skills</h1>
+        <div class="skills-container transition2">
+          <div class="icon-container two">
+            <p class="featured-title">Developer with Unity Experience</p>
+            <ul class="featured-desc skill-desc">
+              <span class="subtitle">Interests:</span>
+              VR/AR, UI, HCI, Tech ethics
+
+              <p class="subtitle">Proficiency:</p>
+
+              <table id="skill-table" class="featured-desc">
+                <tr>
+                  <td>Adobe XD, Figma, Unity</td>
+                  <td class="fort">
+                    <i
+                      class="fab fa-fort-awesome-alt"
+                      style="font-size: 20px"
+                    ></i
+                    >&nbsp;&nbsp;<i
+                      class="fab fa-fort-awesome-alt"
+                      style="font-size: 20px"
+                    ></i
+                    >&nbsp;&nbsp;<i
+                      class="fab fa-fort-awesome-alt"
+                      style="font-size: 20px"
+                    ></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    HTML, CSS, JS, Bootstrap,
+                    React&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </td>
+                  <td class="fort">
+                    <i
+                      class="fab fa-fort-awesome-alt"
+                      style="font-size: 20px"
+                    ></i
+                    >&nbsp;&nbsp;<i
+                      class="fab fa-fort-awesome-alt"
+                      style="font-size: 20px"
+                    ></i
+                    >&nbsp;&nbsp;<i
+                      class="fab fa-fort-awesome-alt"
+                      style="font-size: 20px"
+                    ></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Python, C, C++, Java</td>
+                  <td class="fort">
+                    <i
+                      class="fab fa-fort-awesome-alt"
+                      style="font-size: 20px"
+                    ></i
+                    >&nbsp;&nbsp;<i
+                      class="fab fa-fort-awesome-alt"
+                      style="font-size: 20px"
+                    ></i
+                    >&nbsp;&nbsp;<i
+                      class="fab fa-fort-awesome-alt"
+                      style="font-size: 20px"
+                    ></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>PostgreSQL, MongoDB</td>
+                  <td class="fort">
+                    <i
+                      class="fab fa-fort-awesome-alt"
+                      style="font-size: 20px"
+                    ></i
+                    >&nbsp;&nbsp;<i
+                      class="fab fa-fort-awesome-alt"
+                      style="font-size: 20px"
+                    ></i
+                    >&nbsp;&nbsp;<i
+                      class="fab fa-fort-awesome-alt"
+                      style="font-size: 20px"
+                    ></i>
+                  </td>
+                </tr>
+              </table>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="Portfolio" class="portfolio">
+        <h1 id="Projects" class="bigtitle">Projects</h1>
+        <div class="portfolio-container transition3">
+          <div class="portfolio-left">
+            <div class="inner">
+              <p class="subtitle">Bowser Website</p>
+              <p class="featured-title">Pomodoro</p>
+              <ul class="featured-desc">
+                <li>
+                  <i class="fas fa-angle-right"></i> Team Developed Nintendo
+                  themed pomodoro timer built solely using HTML/CSS to create
+                  afriendly UI with animations distinct from the competition
+                </li>
+                <li>
+                  <i class="fas fa-angle-right"></i> Specifically designed and
+                  edited each logo, background, icon using Figma
+                </li>
+                <li>
+                  <i class="fas fa-angle-right"></i> Added documentation such as
+                  JSDocs, and implemented CD/CI pipeline
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-container transition3">
+          <div class="portfolio-left">
+            <div class="inner">
+              <p class="subtitle">SacHacks</p>
+              <p class="featured-title">Rideshare App</p>
+              <ul class="featured-desc">
+                <li>
+                  <i class="fas fa-angle-right"></i> Worked to create a
+                  rideshare app for college students
+                </li>
+                <li>
+                  <i class="fas fa-angle-right"></i> Developed backend with
+                  Firebase to log each user profile, rating, and past rides
+                </li>
+                <li>
+                  <i class="fas fa-angle-right"></i> Developed frontend with
+                  HTML/CSS, JavaScript, and Figma for wireframe and logo
+                  creation
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Contact" class="contact">
+        <div class="contact-cont">
+          <h1 class="bigtitle">Contact</h1>
+        </div>
+        <div class="col3">
+          <a href="mailto:jimin947@gmail.com"
+            ><i class="fa fa-ge"></i> Jimin947@gmail.com</a
+          >
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+      integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"
+      integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+      var time1 = gsap.timeline();
+      time1.from(".content", {
+        y: "-30%",
+        opacity: 0,
+        duration: 2,
+        ease: Power4.easeOut,
+      });
+      time1.from(
+        ".stag",
+        {
+          y: -50,
+          opacity: 0,
+          stagger: 0.3,
+          ease: Power4.easeOut,
+          duration: 2,
+        },
+        "-=1.3"
+      );
+      gsap.from(".transition2 ", {
+        scrollTrigger: {
+          trigger: ".transition2",
+          start: "top bottom",
+        },
+        duration: 1.2,
+        y: 50,
+        opacity: 0,
+        stagger: 0.3,
+      });
+      gsap.from(".transition3 ", {
+        scrollTrigger: {
+          trigger: ".transition3",
+          start: "top bottom",
+        },
+        duration: 1.2,
+        y: 50,
+        opacity: 0,
+        stagger: 1.0,
+      });
+    </script>
+    <script>
+      let progress = document.getElementById("progbar");
+      let theight = document.body.scrollHeight - window.innerHeight;
+      window.onscroll = function () {
+        let progressH = (window.pageYOffset / theight) * 100;
+        progress.style.height = progressH + "%";
+      };
+    </script>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
