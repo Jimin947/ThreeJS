@@ -229,26 +229,26 @@ function animate() {
 const raycaster = new THREE.Raycaster();
 var mouse = new THREE.Vector2();
 
-//window.addEventListener("pointermove", onMouseMove);
+window.addEventListener("pointermove", onMouseMove);
 
-function onMouseMove(event) {
-  // Get screen-space x/y
-  mouse.x = (event.clientX / renderer.domElement.clientWidth) * 2 - 1;
-  mouse.y = -(event.clientY / renderer.domElement.clientHeight) * 2 + 1;
-
+//function onMouseMove(event) {
+//  // Get screen-space x/y
+//  mouse.x = (event.clientX / renderer.domElement.clientWidth) * 2 - 1;
+//  mouse.y = -(event.clientY / renderer.domElement.clientHeight) * 2 + 1;
+//
   // Perform raycast
-  raycaster.setFromCamera(mouse, camera);
+//  raycaster.setFromCamera(mouse, camera);
 
   // See if the ray from the camera into the world hits our mesh
-  const intersects = raycaster.intersectObject(torus);
+//  const intersects = raycaster.intersectObject(torus);
 
   // Check if an intersection took place
-  if (intersects.length > 0) {
-    const posX = intersects[0].point.x;
-    const posY = intersects[0].point.y;
-    const posZ = intersects[0].point.z;
-    console.log(posX, posY, posZ);
-  }
-}
+//  if (intersects.length > 0) {
+//    const posX = intersects[0].point.x;
+//    const posY = intersects[0].point.y;
+//    const posZ = intersects[0].point.z;
+//    console.log(posX, posY, posZ);
+//  }
+//}
 
 animate();
