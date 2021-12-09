@@ -9,8 +9,8 @@ main {
   z-index: 99;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [12];
-  grid-template-columns: repeat(12, 1fr);
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
 }
 
 section {
@@ -91,8 +91,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 2em;
 }
 
@@ -115,7 +115,7 @@ header nav ul a {
   display: block;
   padding: 0 1em;
   -webkit-text-decoration: underline 0.2em rgba(255, 255, 255, 0);
-  text-decoration: underline 0.2em rgba(255, 255, 255, 0);
+          text-decoration: underline 0.2em rgba(255, 255, 255, 0);
   -webkit-transition: -webkit-text-decoration-color 300ms;
   transition: -webkit-text-decoration-color 300ms;
   transition: text-decoration-color 300ms;
@@ -124,7 +124,7 @@ header nav ul a {
 
 header a:hover {
   -webkit-text-decoration: underline white;
-  text-decoration: underline white;
+          text-decoration: underline white;
 }
 
 .hero-design {
@@ -171,19 +171,19 @@ section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: left;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   position: relative;
 }
 
 .introduction .left,
 .introduction .right {
   -ms-flex-preferred-size: 50vw;
-  flex-basis: 50vw;
+      flex-basis: 50vw;
 }
 
 .subtitle {
@@ -256,10 +256,8 @@ section {
 .portfolio-container img {
   border-radius: 1em;
   margin-bottom: 2em;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(128, 128, 128, 0.2),
-    0 6px 20px 0 rgba(128, 128, 128, 0.2);
-  box-shadow: 0 4px 8px 0 rgba(128, 128, 128, 0.2),
-    0 6px 20px 0 rgba(128, 128, 128, 0.2);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(128, 128, 128, 0.2), 0 6px 20px 0 rgba(128, 128, 128, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(128, 128, 128, 0.2), 0 6px 20px 0 rgba(128, 128, 128, 0.2);
 }
 
 .portfolio-container .featured-desc {
@@ -277,10 +275,10 @@ section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: left;
 }
 
@@ -302,14 +300,8 @@ section {
   right: 0;
   width: 10px;
   -webkit-animation: animate 5s linear infinite;
-  animation: animate 5s linear infinite;
-  background: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#ffc400),
-    to(#ff7b00)
-  );
+          animation: animate 5s linear infinite;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffc400), to(#ff7b00));
   background: linear-gradient(to top, #ffc400, #ff7b00);
 }
 
@@ -326,11 +318,11 @@ section {
   0%,
   100% {
     -webkit-filter: hue-rotate(0deg);
-    filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
   }
   50% {
     -webkit-filter: hue-rotate(20deg);
-    filter: hue-rotate(20deg);
+            filter: hue-rotate(20deg);
   }
 }
 
@@ -338,11 +330,11 @@ section {
   0%,
   100% {
     -webkit-filter: hue-rotate(0deg);
-    filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
   }
   50% {
     -webkit-filter: hue-rotate(20deg);
-    filter: hue-rotate(20deg);
+            filter: hue-rotate(20deg);
   }
 }
 
@@ -353,16 +345,10 @@ section {
   width: 100%;
   top: 0;
   height: 100%;
-  background: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#ffc400),
-    to(#ff7b00)
-  );
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffc400), to(#ff7b00));
   background: linear-gradient(to top, #ffc400, #ff7b00);
   -webkit-filter: blur(10px);
-  filter: blur(10px);
+          filter: blur(10px);
 }
 
 #progbar::after {
@@ -372,16 +358,10 @@ section {
   height: 100%;
   top: 0;
   left: 0;
-  background: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#ffc400),
-    to(#ff7b00)
-  );
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffc400), to(#ff7b00));
   background: linear-gradient(to top, #ffc400, #ff7b00);
   -webkit-filter: blur(30px);
-  filter: blur(30px);
+          filter: blur(30px);
 }
 
 @media screen and (max-width: 540px) {
@@ -394,8 +374,8 @@ section {
   .introduction {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .portfolio {
     display: -webkit-box;
@@ -403,8 +383,8 @@ section {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     min-width: 0;
     padding-bottom: 25em;
     margin-top: -12em;
@@ -415,8 +395,8 @@ section {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #Facts {
     margin-left: 2.5em;
@@ -432,8 +412,8 @@ section {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -454,7 +434,7 @@ section {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 40% auto;
-    grid-template-columns: 40% auto;
+        grid-template-columns: 40% auto;
   }
   .featured-title {
     font-size: 1.3em;
@@ -477,8 +457,8 @@ section {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto minmax(0, 1fr);
-    grid-template-columns: auto minmax(0, 1fr);
-    grid-template-areas: "sidebar content";
+        grid-template-columns: auto minmax(0, 1fr);
+        grid-template-areas: "sidebar content";
     grid-gap: 1em;
   }
   .portfolio {
@@ -508,7 +488,7 @@ section {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 66% auto;
-    grid-template-columns: 66% auto;
+        grid-template-columns: 66% auto;
     padding: 0;
   }
   .hero .content {
