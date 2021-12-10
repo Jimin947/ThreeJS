@@ -309,14 +309,6 @@
         stagger: 1.0,
       });
     </script>
-    <script>
-      let progress = document.getElementById("progbar");
-      let theight = document.body.scrollHeight - window.innerHeight;
-      window.onscroll = function () {
-        let progressH = (window.pageYOffset / theight) * 100;
-        progress.style.height = progressH + "%";
-      };
-    </script>
 
     <script type="module" src="main.js"></script>
   </body>
