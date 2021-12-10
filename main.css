@@ -49,11 +49,11 @@ body {
 }
 
 #Contact {
-  margin-top: -2em;
   height: 30vh;
 }
 
 .contact-cont {
+  padding-top: 4em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
